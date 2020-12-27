@@ -54,7 +54,7 @@ def getVideo(url):
         itag=int(input(Fore.LIGHTYELLOW_EX+" ? Which one do you want to download? (select by itag) "))
         strm = video.streams.get_by_itag(itag)
         print(" ")
-        print(Fore.GREEN + " > Downloading file in "+ Fore.YELLOW + f'"{os.getcwd()}\"')
+        print(Fore.GREEN + " > Downloading file in "+ Fore.YELLOW + f'"{os.getcwd()}\\"')
         strm.download(output_path=os.getcwd(),filename=video.title)
         print(Fore.GREEN+" > Successfully downloaded "+Fore.LIGHTYELLOW_EX+video.title)
         print(" ")
@@ -71,6 +71,6 @@ if __name__ == "__main__":
     url = [item for item in input(Fore.LIGHTYELLOW_EX + " ? What are the videos' url? (split them with commas and space [url1, url2]) ").split(', ')]
     for k in range(len(url)):
         getVideo(url[k])
-    print(Fore.RED + " ! Done. Clossing application in 5 seconds...")
+    print(Fore.RED + " ! Done. Closing application in 5 seconds...")
     time.sleep(5)
     exit()
