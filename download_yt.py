@@ -68,7 +68,7 @@ if __name__ == "__main__":
     os.system("cls")
     os.system("title YouTube video Downloader")
     main()
-    url = [item for item in input(Fore.LIGHTYELLOW_EX + " ? What are the videos' url? (split them with commas) ").split(', ')]
+    url = [item for item in input(Fore.LIGHTYELLOW_EX + " ? What are the videos' url? (split them with commas and space [url1, url2]) ").split(', ')]
     for k in range(len(url)):
         getVideo(url[k])
     print(Fore.RED + " ! Done. Clossing application in 5 seconds...")
