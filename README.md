@@ -3,6 +3,8 @@ A Python script that downloads the video/audio of a given YouTube URL
 
 _(supports multiple URLs input)_
 
+<img src="./sample.gif">
+
 ## Requirements
 ``pip install -r requirements.txt``
 
